@@ -132,7 +132,7 @@ class tx_igncjlinks2t3_pi1 extends tslib_pibase {
   
     function buildLinkItem($item) {
 			
-		$imagelink = "<img alt=\"".$item['name']."\" src=\"".$item['image-url']."\">";
+		$imagelink = "<img alt=\"".$item['name']."\" src=\"".$item['image-url']."\"">";
 		return "<li><a href=".$item['buy-url'].">".$item['name'].".$imagelink</a>"."<br />Beschreibung: ".$item['description']."</li>";
     }
         
