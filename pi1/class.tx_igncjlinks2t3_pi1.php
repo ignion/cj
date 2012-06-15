@@ -73,9 +73,7 @@ class tx_igncjlinks2t3_pi1 extends tslib_pibase {
                 
                 $conf['url'] = $this->cObj->stdWrap($conf['url'], $conf['url']);
 		
-                
-                
-                //  URL depends on search option
+				//  URL depends on search option
                 
                 if ($conf['cjmode.']['productsearch'] == 1) {
                     $url =  $conf['url']."&website-id=".$conf['cjaccount.']['websiteid']."&advertiser-ids=".$conf['cjaccount.']['advertiserids']."&keywords=".$conf['cjmode.']['keywords']."&records-per-page=".$conf['cjmode.']['maxresults'];
